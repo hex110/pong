@@ -1,0 +1,265 @@
+[gd_scene load_steps=7 format=3 uid="uid://c7du0ivodyxy2"]
+
+[ext_resource type="Script" path="res://scripts/settings.gd" id="1_a60ha"]
+[ext_resource type="Script" path="res://scripts/volumeSlider.gd" id="2_p5erp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_becvw"]
+font_size = 26
+
+[sub_resource type="LabelSettings" id="LabelSettings_42hv8"]
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_voer8"]
+font_size = 26
+
+[sub_resource type="LabelSettings" id="LabelSettings_lrrr8"]
+font_size = 26
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a60ha")
+
+[node name="Label0" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -107.0
+offset_top = -260.0
+offset_right = 107.0
+offset_bottom = -224.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Keyboard inputs:"
+label_settings = SubResource("LabelSettings_becvw")
+
+[node name="Player1" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 13.0
+offset_right = 53.0
+offset_bottom = 40.0
+
+[node name="Player1Label" type="Label" parent="Player1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 430.0
+offset_top = 180.0
+offset_right = 513.0
+offset_bottom = 208.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Player 1:"
+label_settings = SubResource("LabelSettings_42hv8")
+
+[node name="Input1" type="Button" parent="Player1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 520.0
+offset_top = 180.0
+offset_right = 550.0
+offset_bottom = 210.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "W"
+
+[node name="Input2" type="Button" parent="Player1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 520.0
+offset_top = 220.0
+offset_right = 550.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "S"
+
+[node name="Input3" type="Button" parent="Player1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 563.0
+offset_top = 180.0
+offset_right = 593.0
+offset_bottom = 211.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "A"
+
+[node name="Input4" type="Button" parent="Player1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 563.0
+offset_top = 220.0
+offset_right = 593.0
+offset_bottom = 251.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Z"
+
+[node name="Player2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -41.0
+offset_top = -5.0
+offset_right = -1.0
+offset_bottom = 35.0
+
+[node name="Player2Label" type="Label" parent="Player2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 678.0
+offset_top = 181.0
+offset_right = 761.0
+offset_bottom = 209.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Player 2:"
+label_settings = SubResource("LabelSettings_42hv8")
+
+[node name="Input5" type="Button" parent="Player2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 768.0
+offset_top = 181.0
+offset_right = 798.0
+offset_bottom = 211.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "I"
+
+[node name="Input6" type="Button" parent="Player2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 768.0
+offset_top = 221.0
+offset_right = 798.0
+offset_bottom = 251.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "K"
+
+[node name="Input7" type="Button" parent="Player2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 810.0
+offset_top = 182.0
+offset_right = 840.0
+offset_bottom = 213.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "↑"
+
+[node name="Input8" type="Button" parent="Player2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 810.0
+offset_top = 222.0
+offset_right = 840.0
+offset_bottom = 253.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "↓"
+
+[node name="Label1" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -87.0
+offset_top = -18.0
+offset_right = 87.0
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Audio volume"
+label_settings = SubResource("LabelSettings_voer8")
+
+[node name="VolumeSlider" type="HSlider" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -177.0
+offset_top = 30.0
+offset_right = 182.0
+offset_bottom = 46.0
+grow_horizontal = 2
+grow_vertical = 2
+value = 100.0
+script = ExtResource("2_p5erp")
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = -70.0
+offset_right = 159.0
+offset_bottom = -34.0
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="BackButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.633027
+anchor_bottom = 0.361111
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Back"
+label_settings = SubResource("LabelSettings_lrrr8")
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="value_changed" from="VolumeSlider" to="VolumeSlider" method="_on_value_changed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_button_pressed"]

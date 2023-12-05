@@ -21,20 +21,28 @@ func _physics_process(delta):
 		bounce(collision.get_collider())
 
 func bounce(hit):
-	if hit.get_name() == "WallUp" or hit.get_name() == "WallDown":
-		direction.y *= -1
-	elif hit.get_name() == "WallLeft":
-		get_parent().restart()
-	elif hit.get_name() == "WallRight":
-		direction.x *= -1
-		get_parent().modifyPoints(1)
-		#get_parent().restart()
-	elif hit.get_name() == "Player":
-		print(hit.position.x)
-		print(position.x)
-		if position.x > 143:
-			direction.x *= -1
-		else:
-			direction.x *= -1
+	match hit.get_name():
+		"WallUp", "WallDown":
 			direction.y *= -1
+		"WallLeft":
+			get_parent().restart()
+			get_parent().modifyPoints(-1)
+		"WallRight":
+			direction.x *= -1
+			get_parent().modifyPoints(1)
+			get_parent().restart()
+		"Player":
+			if (position.y > hit.position.y + 80) or (position.y < hit.position.y - 80):
+				direction.x *= -1
+				direction.y *= -1
+				position.x = 155
+			elif position.x > 148:
+				direction.x *= -1
+		"Player2":
+			if (position.y > hit.position.y + 80) or (position.y < hit.position.y - 80):
+				direction.x *= -1
+				direction.y *= -1
+				position.x = 1125
+			elif position.x < 1132:
+				direction.x *= -1
 	speed += 20
